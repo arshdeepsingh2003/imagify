@@ -14,7 +14,7 @@ const Login = () => {
   }, []);
 
   return (
-    <div className='absolute top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center'>
+    <div className='fixed top-0 left-0 right-0 bottom-0 z-10 backdrop-blur-sm bg-black/30 flex justify-center items-center'>
       <form 
         onSubmit={(e) => e.preventDefault()}
         className='relative bg-white p-6 sm:p-10 w-[90%] sm:w-[400px] rounded-xl text-slate-500'
