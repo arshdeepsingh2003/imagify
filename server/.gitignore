@@ -1,0 +1,46 @@
+# Dependency directory
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor directories and settings
+.vscode/
+.idea/
+
+# Build output (if using build tools like TypeScript, Babel, etc.)
+dist/
+build/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage reports (from Jest, nyc, etc.)
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# System file
+*.swp
+
+# Ignore uploads (if storing files locally — adjust as needed)
+uploads/
