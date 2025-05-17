@@ -1,12 +1,15 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
-const connectDB=async()=>{
+const connectDB = async () => {
+  mongoose.connection.on('connected', () => {
+    console.log("DB CONNECTED");
+  });
 
-    mongoose.connection.on('connected',()=>{
-        console.log("DB CONNECTED")
-    })
-
-    await mongoose.connect(`${process.env.MONGODB_URI}/IMAGIFY`)
-}
+  try {
+    await mongoose.connect(process.env.MONGODB_URI); // Clean and correct
+  } catch (error) {
+    console.error("MongoDB connection error:", error.message);
+  }
+};
 
 export default connectDB;
