@@ -8,7 +8,7 @@ const userRouter=express.Router()
 
 userRouter.post('/register',registerUser)// Route to handle user registration (POST request)
 userRouter.post('/login',loginUser)// Route to handle user login (POST request)
-userRouter.post('/credits',userAuth,userCredits)// Route to handle user login (POST request)
+userRouter.get('/credits',userAuth,userCredits)// Route to handle user login (POST request)
 
 export default userRouter
 
